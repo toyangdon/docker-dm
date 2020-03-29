@@ -12,7 +12,7 @@ check_is_init() {
 
 db_init(){
   mkdir -p ${DM_DATA_DIR}
-  chown -R dmdba {DM_DATA_DIR}
+  chown -R dmdba ${DM_DATA_DIR}
   cd /home/dmdba/dmdbms/bin
   ${DM_PATH}/bin/dminit PATH=/home/dmdba/data PAGE_SIZE=16 SYSDBA_PWD=${SYSDBA_PWD-SYSDBA}
 }
