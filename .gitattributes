@@ -1,1 +1,2 @@
-DMInstall.bin filter=lfs diff=lfs merge=lfs -text
+dm7/DMInstall.bin filter=lfs diff=lfs merge=lfs -text
+dm8/DMInstall.bin filter=lfs diff=lfs merge=lfs -text
