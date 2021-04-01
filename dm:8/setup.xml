@@ -6,7 +6,7 @@
 <TIME_ZONE>+08:00</TIME_ZONE>
 <!-- key 文件路径 -->
 <KEY></KEY>
-<!--安装程序组件类型，取值 0、1、2，0 表示安装全部，1 表示安装服务器，2 表示安装客户 端。默认为 0。 -->
+<!--安装程序组件类型，取值 0、1、2，0 表示安装全部，1 表示安装服务器，2 表示安装客户端。默认为 0。 -->
 <INSTALL_TYPE>0</INSTALL_TYPE>
 <!--安装路径，不允许为空。 -->
 <INSTALL_PATH>/home/dmdba/dmdbms</INSTALL_PATH>
@@ -38,8 +38,8 @@
 <!--标识符大小写敏感，默认值为 Y。只能是’Y’, ’y’, ’N’, ’n’, ’1’, ’0’ 之一 -->
 <CASE_SENSITIVE>Y</CASE_SENSITIVE>
 <!--字符集选项，默认值为 0。0 代表 GB18030,1 代表 UTF-8,2 代表韩文字符集 EUC-KR -->
-<CHARSET>0</CHARSET>
-<!--设置为 1 时，所有 VARCHAR 类型对象的长度以字符为单位，否则以字节为单位。默认 值为 0。 -->
+<CHARSET>1</CHARSET>
+<!--设置为 1 时，所有 VARCHAR 类型对象的长度以字符为单位，否则以字节为单位。默认值为 0。 -->
 <LENGTH_IN_CHAR>0</LENGTH_IN_CHAR>
 <!--字符类型在计算 HASH 值时所采用的 HASH 算法类别。0:原始 HASH 算法;1:改进的 HASH 算法。默认值为 1。 -->
 <USE_NEW_HASH>1</USE_NEW_HASH>
@@ -47,13 +47,13 @@
 <SYSDBA_PWD></SYSDBA_PWD>
 <!--初始化时设置 SYSAUDITOR 的密码，默认为 SYSAUDITOR，长度在 9 到 48 个字符之间 -->
 <SYSAUDITOR_PWD></SYSAUDITOR_PWD>
-<!--初始化时设置 SYSSSO 的密码，默认为 SYSSSO，长度在 9 到 48 个字符之间，仅在安 全版本下可见和可设置 -->
+<!--初始化时设置 SYSSSO 的密码，默认为 SYSSSO，长度在 9 到 48 个字符之间，仅在安全版本下可见和可设置 -->
 <SYSSSO_PWD></SYSSSO_PWD>
-<!--初始化时设置 SYSDBO 的密码，默认为 SYSDBO，长度在 9 到 48 个字符之间，仅在安 全版本下可见和可设置 -->
+<!--初始化时设置 SYSDBO 的密码，默认为 SYSDBO，长度在 9 到 48 个字符之间，仅在安全版本下可见和可设置 -->
 <SYSDBO_PWD></SYSDBO_PWD>
 <!--初始化时区，默认是东八区。格式为:正负号小时:分钟，范围:-12:59 ~ +14:00 -->
 <TIME_ZONE>+08:00</TIME_ZONE>
-<!--是否启用页面内容校验，0:不启用;1:简单校验;2:严格校验(使用 CRC16 算法生 成校验码)。默认0 -->
+<!--是否启用页面内容校验，0:不启用;1:简单校验;2:严格校验(使用 CRC16 算法生成校验码)。默认0 -->
 <PAGE_CHECK>0</PAGE_CHECK>
 <!--设置默认加密算法，不超过 128 个字符 -->
 <EXTERNAL_CIPHER_NAME></EXTERNAL_CIPHER_NAME>
@@ -61,7 +61,7 @@
 <EXTERNAL_HASH_NAME></EXTERNAL_HASH_NAME>
 <!--设置根密钥加密引擎，不超过 128 个字符 -->
 <EXTERNAL_CRYPTO_NAME></EXTERNAL_CRYPTO_NAME>
-<!--全库加密密钥使用的算法名。算法可以是 DM 内部支持的加密算法，或者是第三方的加 密算法。默认使用"AES256_ECB"算法加密，最长为 128 个字节 -->
+<!--全库加密密钥使用的算法名。算法可以是 DM 内部支持的加密算法，或者是第三方的加密算法。默认使用"AES256_ECB"算法加密，最长为 128 个字节 -->
 <ENCRYPT_NAME></ENCRYPT_NAME>
 <!--指定日志文件是否加密。默认值 N。取值 Y/N，y/n，1/0 -->
 <RLOG_ENC_FLAG>N</RLOG_ENC_FLAG>
