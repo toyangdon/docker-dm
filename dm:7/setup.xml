@@ -45,8 +45,7 @@
 <USE_NEW_HASH>1</USE_NEW_HASH>
 <!--初始化时设置 SYSDBA 的密码，默认为 SYSDBA，长度在 9 到 48 个字符之间 -->
 <SYSDBA_PWD></SYSDBA_PWD>
-<!--初始化时设置 SYSAUDITOR 的密码，默认为 SYSAUDITOR，长度在 9 到 48 个字符之
-间 -->
+<!--初始化时设置 SYSAUDITOR 的密码，默认为 SYSAUDITOR，长度在 9 到 48 个字符之间 -->
 <SYSAUDITOR_PWD></SYSAUDITOR_PWD>
 <!--初始化时设置 SYSSSO 的密码，默认为 SYSSSO，长度在 9 到 48 个字符之间，仅在安 全版本下可见和可设置 -->
 <SYSSSO_PWD></SYSSSO_PWD>
