@@ -12,11 +12,11 @@
 
 ### 快速启动
 
-#### DM7 X86-64 版
+#### DM7 AMD64 版
 
 `docker run -p 5236:5236 helsonxiao/dm:7`
 
-#### DM8 X86-64 版
+#### DM8 AMD64 版
 
 `docker run -p 5236:5236 helsonxiao/dm:8`
 
