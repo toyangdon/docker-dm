@@ -30,7 +30,6 @@ RUN yum install -y wget && wget https://github.com/tianon/gosu/releases/download
 
 RUN gosu dmdba mkdir /home/dmdba/dmdbms
 COPY --from=install /home/dmdba/dmdbms /home/dmdba/dmdbms
-RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 #RUN /home/dmdba/dmdbms/script/root/root_installer.sh
 RUN cp "/home/dmdba/dmdbms/bin/dm_svc.conf" /etc/dm_svc.conf
