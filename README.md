@@ -22,7 +22,7 @@
 
 #### DM8 ARM64 版
 
-`docker run -p 5236:5236 toyangdon/dm:8-arm64`
+`docker run -p 5236:5236 helsonxiao/dm:8-arm64`
 
 ### 持久化存储数据
 
@@ -46,4 +46,10 @@
 
 ## 镜像构建
 
-`docker build -t [image_name] .`
+```
+GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:helsonxiao/docker-dm.git
+# 进入你希望构建的镜像目录
+cd [image_dir]
+# 请先使用 git lfs 拉取 DMInstall.bin
+docker build -t [image_name] .
+```
